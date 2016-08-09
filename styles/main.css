@@ -21,14 +21,18 @@ html, body {
   display: block;
 }
 .header__circle-logo {
-  display: flex;
   margin: -10px auto 0;
   background: #212121;
   width: 90px;
   height: 90px;
+  position: relative;
 }
 .circle-logo {
-  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -25%;
+  margin-left: -25%;
   width: 45px;
   height: 45px;
   border-radius: 50%;
