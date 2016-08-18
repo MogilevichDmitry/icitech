@@ -29,6 +29,7 @@ html {
   padding: 10px 10px 45px;
 }
 .feedback-btn {
+  display: none;
   font-weight: 500;
   font-size: 14px;
   padding: 10px 20px;
