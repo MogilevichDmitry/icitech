@@ -1,6 +1,11 @@
-$(function(){
-    $("#typed-tagline").typed({
-        strings: ["Image.", "Create.", "Improve.", "Image. Create. Improve"],
-        typeSpeed: 50
-    });
+$( document ).ready(function() {
+   /* $(window).bind('scroll', function () {
+        if ($(window).width() > 1040) {
+            if ($(window).scrollTop() > 450) {
+                $('.common__feedback-btn').fadeIn(250);
+            } else {
+                $('.common__feedback-btn').fadeOut(250);
+            }
+        }
+    });*/
 });
