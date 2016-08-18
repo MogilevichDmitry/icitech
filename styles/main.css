@@ -5,7 +5,7 @@
 }
 html {
   font-family: 'Roboto', sans-serif;
-
+  min-height: 100vh;
 }
 html:before, html:after {
   content: "";
@@ -94,7 +94,7 @@ html {
 }
 
 .content {
-  margin: 30px auto 0px;
+  margin: 40px auto 0px;
   max-width: 600px;
 }
 .content__box {
@@ -118,6 +118,7 @@ html {
   color: rgb(33, 33, 33);
   line-height: 1.667;
   margin: -4px 0 30px;
+  font-weight: 300;
 }
 .text__accent {
   font-weight: 400;
@@ -182,6 +183,34 @@ html {
 }
 .portfolio__contact {
   margin-top: 30px;
+}
+
+/* contacts */
+.contacts__content {
+  margin: 80px auto 0px;
+  max-width: 700px;
+  padding: 20px;
+}
+.contacts__box {
+  display: flex;
+}
+.contacts__title {
+  min-width: 155px;
+  font-size: 17px;
+  color: rgb(33, 33, 33);
+  text-transform: uppercase;
+  font-variant: small-caps;
+  font-weight: 500;
+  text-align: right;
+  margin-right: 60px;
+}
+.contacts__description {
+  font-weight: 400;
+  text-align: justify;
+  font-size: 16px;
+  color: rgb(33, 33, 33);
+  line-height: 1.667;
+  margin: -4px 0 30px;
 }
 
 @media (min-width: 375px) {
@@ -334,6 +363,16 @@ html {
   .services__content {
     width: 100%;
   }
+  .contacts__content {
+    max-width: 500px;
+  }
+  .contacts__box {
+    flex-direction: column;
+  }
+  .contacts__title {
+    text-align: left;
+    margin-bottom: 15px;
+  }
 }
 @media (max-width: 550px) {
   .common__header, .portfolio__works {
@@ -371,6 +410,9 @@ html {
   .portfolio__work {
     width: 100%;
     margin-bottom: 10px;
+  }
+  .contacts__description {
+    text-align: left;
   }
 }
 
