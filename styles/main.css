@@ -66,10 +66,10 @@ html {
 }
 .nav__item {
   margin: 0 15px;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  padding-bottom: 2px;
+}
+.nav__item:hover {
+  padding-bottom: 0;
 }
 .nav__item:last-child {
   margin-right: 0;
@@ -82,6 +82,30 @@ html {
   font-variant: small-caps;
   font-weight: 500;
   padding: 5px 5px;
+}
+.nav__link::after{
+    display: block;
+    margin: 5px auto 0;
+    content: '';
+    width:0px;
+    height: 2px;
+    background: black;
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    -ms-transition: all 500ms;
+    -o-transition: all 500ms;
+    transition: all 500ms;
+}
+.nav__item:hover > .nav__link::after{
+    width: 100%;
+}
+.nav__link_active::after {
+    display: block;
+    margin: 5px auto 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: black;
 }
 .tagline {
   font-size: 26px;
