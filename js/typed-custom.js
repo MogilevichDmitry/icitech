@@ -2,22 +2,15 @@ $( document ).ready(function() {
     $(function () {
         $("#typed-tagline").typed({
             strings: [
-                "Imagine. Create. Improve",
-                "Нужен сайт? Мы сделаем",
-                "Уникальный дизайн",
-                "Грамотный код",
-                "Поддержка и гарантия",
-                "Остались вопросы? Звоните +375 33 332 19 44^4500",
-                "Ну, или читайте",
-                "Мы молодая и дружная команда",
-                "Творчески подходим к заданию",
-                "С пользой для бизнеса",
-                "И не боимся сложных задач!",
-                "Наш подход к делу:"
+                "Imagine. Create. Improve.",
             ],
-            typeSpeed: 35,
-            backDelay: 550,
-            loop: true,
+            typeSpeed: 40,
         });
+    });
+    $(function () {
+        setTimeout(
+            function() {
+                $(".typed-cursor").hide()
+            }, 3000);
     });
 });
