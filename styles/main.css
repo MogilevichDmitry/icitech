@@ -190,22 +190,9 @@ html {
 
 /* services */
 .services__content {
-  margin: 60px auto 0;
-  width: 45%;
-  padding: 0 20px;
+  margin-top: 60px;
 }
-.services__content-box{
-  display: flex;
-  flex-direction: column;
-}
-.services__content-title {
-  min-width: 155px;
-  font-size: 17px;
-  color: rgb(33, 33, 33);
-  text-transform: uppercase;
-  font-variant: small-caps;
-  font-weight: 500;
-  text-align: left;
+.services__content .content__description {
   margin-bottom: 15px;
 }
 
@@ -292,7 +279,6 @@ html {
   .contact {
     text-align: right;
   }
-
   .nav__item {
     margin: 0 15px;
   }
