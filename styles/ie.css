@@ -1,0 +1,40 @@
+.home__header {
+  position: relative;
+}
+.home__logo {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+}
+.tagline {
+  position: absolute;
+  top: 80%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.main-nav {
+  float: right;
+}
+.contacts__content{
+  width: 900px;
+}
+.contacts__box {
+  display: block;
+}
+.contacts__title {
+  display: inline-block;
+  vertical-align: top;
+}
+.contacts__description {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.contacts__description_ie {
+  display: block;
+}
+.contacts__box div {
+  display: inline-block;
+}
