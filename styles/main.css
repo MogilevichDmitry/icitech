@@ -154,7 +154,8 @@ html {
   font-weight: 500;
 
   max-width: 210px;
-  margin: 0 auto 10vh;
+  min-height: 65px;
+  margin: 0 auto auto;
 
   text-align: center;
 
@@ -239,13 +240,12 @@ html {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
 }
 .home__logo {
-  width: 215px;
+  width: 225px;
   height: 60px;
+
+  margin: auto auto 30px;
 }
 
 /* services */
@@ -333,6 +333,7 @@ html {
     min-width: 310px;
 
     text-align: left;
+    min-height: initial;
   }
   .content {
     max-width: 70%;
@@ -395,6 +396,8 @@ html {
   .home__logo {
     width: 525px;
     height: 138px;
+
+    margin-bottom: 60px;
   }
   .nav__item:hover > .nav__link::after {
     width: 100%;
@@ -404,11 +407,6 @@ html {
   }
   .content__box {
     margin-bottom: 20px;
-  }
-  .tagline {
-    font-size: 34px;
-
-    min-width: 403px;
   }
   .feedback-btn {
     display: block;
@@ -444,11 +442,6 @@ html {
   }
   .page__wrapper {
     padding: 20px 20px 55px;
-  }
-  .tagline {
-    font-size: 40px;
-
-    min-width: 475px;
   }
   .home__logo {
     width: 560px;
