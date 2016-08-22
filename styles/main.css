@@ -408,11 +408,11 @@ html {
 
 /* lightbox */
 /* Preload images */
-body:after {
+.portfolio:after {
   content: url(../images/layout/close.png) url(../images/layout/loading.gif) url(../images/layout/prev.png) url(../images/layout/next.png);
   display: none;
 }
-body.lb-disable-scrolling {
+.portfolio.lb-disable-scrolling {
   overflow: hidden;
 }
 .lightboxOverlay {
