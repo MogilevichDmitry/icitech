@@ -218,30 +218,25 @@ html {
 
 /* contacts */
 .contacts__content {
-  margin: 80px auto 0px;
-  max-width: 700px;
-  padding: 20px;
+  margin: 50px auto 0 20px;
+  padding: 0 10px;
 }
 .contacts__box {
-  display: flex;
+  margin-bottom: 20px;
 }
 .contacts__title {
-  min-width: 155px;
+  margin-bottom: 10px;
   font-size: 17px;
   color: rgb(33, 33, 33);
   text-transform: uppercase;
   font-variant: small-caps;
   font-weight: 500;
-  text-align: right;
-  margin-right: 60px;
 }
 .contacts__description {
   font-weight: 400;
-  text-align: justify;
   font-size: 16px;
   color: rgb(33, 33, 33);
   line-height: 1.667;
-  margin: -4px 0 30px;
 }
 
 @media (min-width: 425px) {
@@ -289,6 +284,24 @@ html {
   }
   .portfolio__item:nth-child(2n) {
     margin-right: 0;
+  }
+  .contacts__content {
+    margin: 120px auto 0px;
+    max-width: 700px;
+    padding: 0 20px;
+  }
+  .contacts__box {
+    display: flex;
+    margin-bottom: 0;
+  }
+  .contacts__title {
+    min-width: 155px;
+    text-align: right;
+    margin-right: 60px;
+    margin-bottom: 0;
+  }
+  .contacts__description {
+    margin: -4px 0 30px;
   }
 }
 @media (min-width: 1024px) {
