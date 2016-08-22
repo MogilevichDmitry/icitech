@@ -11,6 +11,6 @@ $( document ).ready(function() {
         setTimeout(
             function() {
                 $(".typed-cursor").hide()
-            }, 3000);
+            }, 2200);
     });
 });

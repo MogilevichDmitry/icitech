@@ -828,3 +828,27 @@ body {
     transform: translate3d(0, -200%, 0);
   }
 }
+
+/* ie10 and edge */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .home__header {
+    position: relative;
+  }
+  .home__logo {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+  }
+  .tagline {
+    position: absolute;
+    top: 80%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  .main-nav {
+    float: right;
+  }
+}
