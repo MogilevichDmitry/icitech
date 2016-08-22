@@ -272,6 +272,9 @@ html {
   border: 10px solid white;
   border-radius: 3px;
   box-shadow: 0 0 5px 0 rgba(189,189,189,.4);
+
+  -webkit-transition: 200ms;
+  transition: 200ms;
 }
 .portfolio__img {
   width: 100%;
@@ -415,6 +418,9 @@ html {
   }
   .portfolio {
     margin: 40px 0 30px;
+  }
+  .portfolio__item:hover {
+    box-shadow: 0 0 6px 0 rgba(189,189,189,.8);
   }
 }
 @media (min-width: 1200px) {
@@ -729,7 +735,6 @@ body {
 }
 .page {
   padding: 6.5em;
-  background: #66c6ff;
   display: flex;
   flex-direction: column;
 }
