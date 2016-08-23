@@ -274,6 +274,75 @@ html {
   color: rgb(33, 33, 33);
 }
 
+/* papersheet */
+.papersheet {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  overflow: hidden;
+  transition: background 200ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 0;
+}
+.papersheet.opened {
+  transition: background 1000ms;
+  background: #1ea1e0;
+  position: fixed;
+  height: 100vh;
+}
+.papersheet__form {
+  z-index: 1;
+  display: none;
+  overflow: hidden;
+  animation-duration: 500ms;
+}
+.opened .papersheet__form {
+  display: block;
+}
+.papersheet__close-icon {
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  animation-duration: 400ms;
+}
+.opened .papersheet__close-icon {
+  display: block;
+}
+.feedback-btn {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  display: none;
+
+  padding: 10px 20px;
+
+  text-decoration: none;
+
+  color: white;
+  border-radius: 3px;
+  background: #1ea1e0;
+  cursor: pointer;
+}
+.feedback-btn:hover {
+  opacity: .9;
+}
+.opened .feedback-btn {
+  display: none;
+}
+
 @media (min-width: 425px) {
   .home__logo {
     width: 280px;
@@ -680,77 +749,6 @@ html {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 }
 
-/* papersheet */
-.papersheet {
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-  overflow: hidden;
-  transition: background 200ms;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 0;
-}
-.papersheet.opened {
-  transition: background 1000ms;
-  background: pink;
-  position: fixed;
-  height: 100vh;
-}
-.papersheet__form {
-  z-index: 1;
-  display: none;
-  overflow: hidden;
-  animation-duration: 500ms;
-}
-.opened .papersheet__form {
-  transform: translateX(60%);
-  display: block;
-}
-.papersheet__close-icon {
-  display: none;
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  height: 30px;
-  width: 30px;
-  cursor: pointer;
-  animation-duration: 400ms;
-}
-.opened .papersheet__close-icon {
-  display: block;
-}
-
-.feedback-btn {
-  position: fixed;
-  right: 40px;
-  bottom: 40px;
-
-  font-size: 14px;
-  font-weight: 500;
-
-  display: block;
-
-  padding: 10px 20px;
-
-  text-decoration: none;
-
-  color: white;
-  border-radius: 3px;
-  background: #1ea1e0;
-  cursor: pointer;
-}
-.feedback-btn:hover {
-  opacity: .9;
-}
-.opened .feedback-btn {
-  display: none;
-}
-
 /* ie10 and edge */
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .home__header {
@@ -773,4 +771,49 @@ html {
   .main-nav {
     float: right;
   }
+}
+
+
+/*!
+ * animate.css -http://daneden.me/animate
+ * Version - 3.5.1
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2016 Daniel Eden
+ */
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
 }
