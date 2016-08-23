@@ -6,9 +6,9 @@ $(document).ready(function () {
     _trigger.click(function () {
 
         if (_papersheet.hasClass("opened")) {
-            $(this).parent(".papersheet").stop().removeClass("opened");
+            $(".papersheet").stop().removeClass("opened");
         } else {
-            $(this).parent(".papersheet").stop().addClass("opened");
+            $(".papersheet").stop().addClass("opened");
         }
     });
 });
