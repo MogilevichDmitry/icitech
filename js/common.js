@@ -29,7 +29,7 @@ $(document).ready(function () {
 			data: str,
 			success: function(msg) {
 				if(msg == 'ok') {
-                    alert("OKEY");
+                    $(':input','#form').not(':button, :submit, :reset, :hidden').val('').removeAttr('selected');
 				}
 				else {
 					alert("error");
