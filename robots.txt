@@ -1,0 +1,3 @@
+User-agent: *
+Host: icitech.by
+Sitemap: http://icitech.by/sitemap.xml

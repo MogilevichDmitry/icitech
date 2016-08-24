@@ -17,4 +17,25 @@ $(document).ready(function () {
             $(".papersheet").stop().removeClass("opened");
         }
     });
+
+    $("#form").submit(function(event) {
+        
+        event.preventDefault();
+
+		var str = $(this).serialize();
+		$.ajax({
+			type: "POST",
+			url: "contact.php",
+			data: str,
+			success: function(msg) {
+				if(msg == 'ok') {
+                    alert("OKEY");
+				}
+				else {
+					alert("error");
+				}
+			}
+		});
+		return false;
+	});
 });
