@@ -17,4 +17,4 @@ $(document).ready(function () {
             $(".papersheet").stop().removeClass("opened");
         }
     });
-});g
+});
