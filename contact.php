@@ -1,4 +1,5 @@
 <?php
+	
 	$txtname = trim($_POST['txtname']);
 
 	$txtcontact = trim($_POST['txtcontact']);
@@ -16,7 +17,8 @@
 	$headers .= "From: ". $fromName ." <". $fromMail ."> \r\n";
 
 	$body = "Получено письмо с сайта ICITech.by\n\nИмя: $txtname\nКонтактная информация: $txtcontact \nСообщение: $txtmessage";
-	$mail = mail($emailTo, $subject, $body, $headers, '-f'. $fromMail );
+
+  mail($emailTo, $subject, $body, $headers, '-f'. $fromMail );
 
 	echo 'ok';
 ?>

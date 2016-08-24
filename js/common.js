@@ -19,9 +19,9 @@ $(document).ready(function () {
     });
 
     $("#form").submit(function(event) {
-        
-        event.preventDefault();
 
+        event.preventDefault();
+        
 		var str = $(this).serialize();
 		$.ajax({
 			type: "POST",
