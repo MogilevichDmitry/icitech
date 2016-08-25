@@ -250,12 +250,19 @@ html {
   outline: 0;
 }
 .portfolio__link {
-  display: inline-block;
-  color: #212121;
   font-size: 14px;
-}
-.portfolio__link:hover {
-  color: rgba(0,0,0,0.7);
+  font-weight: 500;
+
+  display: inline-block;
+
+  padding: 10px 20px;
+
+  text-decoration: none;
+
+  color: #666666;
+  border-radius: 3px;
+  background: #eeeeee;
+  cursor: pointer;
 }
 
 /* contacts */
@@ -515,6 +522,9 @@ html {
   }
   .nav__item:hover > .nav__link::after {
     width: 100%;
+  }
+  .portfolio__link:hover {
+    opacity: 0.9;
   }
   .content__description {
     font-size: 17px;
