@@ -382,14 +382,14 @@ html {
   animation-duration: 400ms;
   color: white;
   border-radius: 50%;
-  background: rgba(999,999,999,0.3);
+  background: #26addd;
 }
 .opened .papersheet__close-icon {
   display: flex;
   flex-direction: column;
 }
 .close-icon {
-  width: 22px;
+  width: 21px;
   height: 30px;
   background: url('../images/layout/esc.svg') no-repeat 0 0;
   margin: auto;
