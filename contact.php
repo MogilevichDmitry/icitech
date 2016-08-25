@@ -6,7 +6,7 @@
 
 	$txtmessage = trim($_POST['txtmessage']);
 
-	$fromMail = $txtcontact;
+	$fromMail = '+375330000000';
 	$fromName = $txtname;
 
 	$emailTo = 'hello@icitech.by';

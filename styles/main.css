@@ -249,7 +249,7 @@ html {
   border: 0;
   outline: 0;
 }
-.portfolio__link {
+.common__link {
   font-size: 14px;
   font-weight: 500;
 
@@ -261,14 +261,18 @@ html {
 
   color: #666666;
   border-radius: 3px;
-  background: #eeeeee;
+  background: #F5F5F5;
   cursor: pointer;
+}
+.portfolio__img_hidden {
+  display: none;
 }
 
 /* contacts */
 .contacts__content {
   margin: 50px auto 0 20px;
   padding: 0 10px;
+  text-align: center;
 }
 .contacts__box {
   margin-bottom: 20px;
@@ -278,6 +282,7 @@ html {
   font-weight: 500;
   font-variant: small-caps;
 
+  text-align: left;
   margin-bottom: 10px;
 
   text-transform: uppercase;
@@ -288,6 +293,7 @@ html {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.667;
+  text-align: left;
 
   color: rgb(33, 33, 33);
 }
@@ -324,6 +330,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  min-height: 41px;
 }
 .papersheet__logo {
   width: 80px;
@@ -332,7 +339,7 @@ html {
 }
 .form-wrapper {
   max-width: 360px;
-  margin: auto 0 auto 95px;
+  margin: 25px 0 auto;
 }
 .form__field {
   margin-bottom: 50px;
@@ -369,6 +376,12 @@ html {
   border: none;
   font-weight: 500;
   cursor: pointer;
+}
+.form__result {
+  color: white;
+  display: none;
+  max-width: 730px;
+  margin: auto 0 auto 95px;
 }
 .opened .papersheet__form {
   display: flex;
@@ -415,7 +428,7 @@ html {
   cursor: pointer;
 }
 .feedback-btn:hover {
-  opacity: .9;
+  opacity: .8;
 }
 .opened .feedback-btn {
   display: none;
@@ -519,14 +532,17 @@ html {
   .nav__item:hover > .nav__link::after {
     width: 100%;
   }
-  .portfolio__link:hover {
-    opacity: 0.9;
+  .common__link:hover {
+    background: #EEEEEE;
   }
   .content__description {
     font-size: 17px;
   }
   .content__box {
     margin-bottom: 20px;
+  }
+  .contacts__link {
+    display: none;
   }
   .feedback-btn {
     display: block;
@@ -536,6 +552,9 @@ html {
   }
   .portfolio__item:hover {
     box-shadow: 0 0 6px 0 rgba(189,189,189,.8);
+  }
+  .form-wrapper {
+    margin: auto 0 auto 95px;
   }
 }
 @media (min-width: 1200px) {
@@ -575,6 +594,12 @@ html {
   }
   .content {
     max-width: 1110px;
+  }
+}
+
+@media (max-height: 460px) {
+  .contacts__link {
+    display: none;
   }
 }
 

@@ -23,6 +23,7 @@ $(document).ready(function () {
         event.preventDefault();
         
 		var str = $(this).serialize();
+
 		$.ajax({
 			type: "POST",
 			url: "contact.php",
@@ -30,9 +31,18 @@ $(document).ready(function () {
 			success: function(msg) {
 				if(msg == 'ok') {
                     $(':input','#form').not(':button, :submit, :reset, :hidden').val('').removeAttr('selected');
+
+                    $('#form').hide('fast');
+                    $('#send-msg_done').fadeIn('slow');
+
+                    setTimeout( function() {
+                        $('#form').show();
+                        $('#send-msg_done').hide();
+                    },4900);
 				}
 				else {
-					alert("error");
+                    $('#form').hide('fast');
+                    $('#send-msg_error').fadeIn('slow');
 				}
 			}
 		});
