@@ -376,8 +376,8 @@ html {
 }
 .papersheet__close-icon {
   display: none;
-  height: 40px;
-  width: 40px;
+  height: 41px;
+  width: 41px;
   cursor: pointer;
   animation-duration: 400ms;
   color: white;
@@ -389,15 +389,11 @@ html {
   flex-direction: column;
 }
 .close-icon {
-  width: 16px;
-  height: 16px;
-  background: url('../images/layout/close-icon.svg') no-repeat 0 0;
-  margin: 5px auto 0;
+  width: 22px;
+  height: 30px;
+  background: url('../images/layout/esc.svg') no-repeat 0 0;
+  margin: auto;
   background-size: cover;
-}
-.close-icon__text {
-  font-size: 11px;
-  margin: 0 auto ;
 }
 .feedback-btn {
   position: fixed;
@@ -857,7 +853,6 @@ html {
     float: right;
   }
 }
-
 
 /*! * animate.css -http://daneden.me/animate
  * Version - 3.5.1  * Licensed under the MIT license - http://opensource.org/licenses/MIT*
